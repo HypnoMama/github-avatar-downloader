@@ -31,7 +31,7 @@ function downloadImagebyURL(url, filePath){
   request.get(url)
   .on("error", function(err){
     console.error(err);
-  });
+  })
   .pipe(fs.createWriteStream(filePath));
 }
 
